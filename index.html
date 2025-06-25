@@ -1,13 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <link rel='stylesheet'.href='style.css'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>queijo de minas</title>
+    <title>Fórmula 1 - Mundo das Corridas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-</body>
-<p>queijos artesanais</p>
-<h1>clique aqui</h1>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Fórmula 1</h1>
+            <p>O mundo das corridas de alta velocidade</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#pilotos">Pilotos</a></li>
+                <li><a href="#equipes">Equipes</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>O que é a Fórmula 1?</h2>
+            <p>A Fórmula 1 é a categoria máxima do automobilismo mundial, com corridas em circuitos ao redor do mundo. Os pilotos competem em carros extremamente rápidos e tecnologicamente avançados.</p>
+        </section>
+
+        <section id="pilotos">
+            <h2>Pilotos Famosos</h2>
+            <ul>
+                <li>Lewis Hamilton</li>
+                <li>Sebastian Vettel</li>
+                <li>Fernando Alonso</li>
+                <li>Max Verstappen</li>
+                <li>Charles Leclerc</li>
+            </ul>
+        </section>
+
+        <section id="equipes">
+            <h2>Equipes de F1</h2>
+            <div class="equipes">
+                <div class="equipe">
+                    <h3>Mercedes</h3>
+                    <p>Equipa dominante nas últimas temporadas, com Lewis Hamilton como piloto estrela.</p>
+                </div>
+                <div class="equipe">
+                    <h3>Ferrari</h3>
+                    <p>Uma das equipes mais tradicionais, sempre em busca do título mundial.</p>
+                </div>
+                <div class="equipe">
+                    <h3>Red Bull</h3>
+                    <p>Equipe com grande inovação e sucesso, especialmente com Max Verstappen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="noticias">
+            <h2>Últimas Notícias</h2>
+            <button id="carregarNoticias">Carregar Notícias</button>
+            <ul id="listaNoticias">
+                <!-- As notícias serão carregadas aqui via JS -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fórmula 1. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
