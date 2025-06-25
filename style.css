@@ -1,100 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1 - Mundo das Corridas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Fórmula 1</h1>
+            <p>O mundo das corridas de alta velocidade</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#pilotos">Pilotos</a></li>
+                <li><a href="#equipes">Equipes</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    <main>
+        <section id="sobre">
+            <h2>O que é a Fórmula 1?</h2>
+            <p>A Fórmula 1 é a categoria máxima do automobilismo mundial, com corridas em circuitos ao redor do mundo. Os pilotos competem em carros extremamente rápidos e tecnologicamente avançados.</p>
+        </section>
 
-header {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
+        <section id="pilotos">
+            <h2>Pilotos Famosos</h2>
+            <ul>
+                <li>Lewis Hamilton</li>
+                <li>Sebastian Vettel</li>
+                <li>Fernando Alonso</li>
+                <li>Max Verstappen</li>
+                <li>Charles Leclerc</li>
+            </ul>
+        </section>
 
-header h1 {
-    font-size: 3em;
-}
+        <section id="equipes">
+            <h2>Equipes de F1</h2>
+            <div class="equipes">
+                <div class="equipe">
+                    <h3>Mercedes</h3>
+                    <p>Equipa dominante nas últimas temporadas, com Lewis Hamilton como piloto estrela.</p>
+                </div>
+                <div class="equipe">
+                    <h3>Ferrari</h3>
+                    <p>Uma das equipes mais tradicionais, sempre em busca do título mundial.</p>
+                </div>
+                <div class="equipe">
+                    <h3>Red Bull</h3>
+                    <p>Equipe com grande inovação e sucesso, especialmente com Max Verstappen.</p>
+                </div>
+            </div>
+        </section>
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+        <section id="noticias">
+            <h2>Últimas Notícias</h2>
+            <button id="carregarNoticias">Carregar Notícias</button>
+            <ul id="listaNoticias">
+                <!-- As notícias serão carregadas aqui via JS -->
+            </ul>
+        </section>
+    </main>
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+    <footer>
+        <p>&copy; 2025 Fórmula 1. Todos os direitos reservados.</p>
+    </footer>
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-    background-color: #fff;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-size: 2em;
-    color: #222;
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    font-size: 1.2em;
-    margin: 5px 0;
-}
-
-.equipes {
-    display: flex;
-    gap: 20px;
-}
-
-.equipe {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 8px;
-    width: 30%;
-}
-
-.equipe h3 {
-    color: #0056b3;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #222;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    <script src="scripts.js"></script>
+</body>
+</html>
